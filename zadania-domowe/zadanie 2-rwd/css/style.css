@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Verdena', sans-serif;
+}
+
+#header img {
+    width: 100%;
+}
+
+#header1 img {
+    width: 100%;
+}
+
+@media(max-width: 992px) {
+    #header {
+        background-color: white;
+        width: 100%;
+        height: 50%;
+    }
+    #header1 {
+        visibility: hidden;
+    }
+    #tekst {
+        color: black;
+        text-align: center;
+        top: 50%;
+    }
+    #tekst .span: {
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1170px) {
+    #headerimg {
+        background-color: white;
+        width: 100%;
+        height: 70%;
+        top: 100px;
+    }
+    #header {
+        display: none;
+    }
+    #header1 p {
+        color: black;
+        right: 100px;
+    }
+    #header1 p {
+        position: fixed;
+        text-align: right;
+        bottom: 500px;
+        color: white;
+    }
+}
+@media(min-width: 1170px) {
+    #headerimg {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        top: 100px;
+    }
+    #header1 {
+        display: none;
+    }
+    #header1 p {
+        color: white;
+        left: 100px;
+    }
+    #header p {
+        position: fixed;
+        text-align: right;
+        bottom: 500px;
+        color: white;
+    }
+}
+
