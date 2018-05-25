@@ -1,44 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-    <form action="https://formspree.io/maciej.oleksiuk@gmail.com" method="post">
-        <label for="imie">Imie:</label><br />
-        <input type="text" name="imie" id="imie"><br />
 
-        <label for="nazwisko">Nazwisko:</label><br />
-        <input type="text" name="nazwisko" id="nazwisko"><br />
+    <form action="https://formspree.io/maciej.mazurek87@gmail.com" method="POST">
 
-        <label for="email">Email:</label><br />
-        <input type="text" name="Email" id="email"><br />
+        <label for="name">Imię:</label><br/>
+        <input type="text" name="imie" id="name" required><br/>
+        <br/>
 
-        <label for="nrtelefonu">Nr telefonu:</label><br />
-        <input type="text" name="nrtelefonu" id="nrtelefonu"><br />
-        <label for="wybormiasta">Wybor miasta:</label><br />
-        <select name="wybormiasta"> 
-          <option value="value1">Kraków</option>    
-          <option value="value2" selected>Warszawa</option>
-          <option value="value3" selected>Gdańsk</option>
-        </select><br />
-        <label for="plec">Płeć</label><br />
-        <input type="radio" name="plec" value="Kobieta" checked> Kobieta<br />
-        <input type="radio" name="plec" value="Mężczyzna"> Mężczyzna<br />
+        <label for="surname">Nazwisko:</label><br/>
+        <input type="text" name="nazwisko" id="surname" required><br/>
 
-        <label for="checkbox">Zgoda na przetwarzanie danych:</label><br />
-        <input type="checkbox" name="checkbox" value="Tak"> Zgadzam się na przetwarzanie danych<br />
-        
 
-        <label for="wiadomosc">Wiadomosc:</label><br />
-        <textarea maxlength="1000"></textarea><br />
 
-        <input type="submit" value="Wyslij">
+        <label for="email">E-mail:</label><br/>
+        <input type="email" name="e-mail" id="email" required><br/>
+        <br/>
+
+        <label for="phone">Telefon:</label><br/>
+        <input type="tel" maxlength="9" placeholder="Tylko 9 cyfr" name="telefon" id="phone" pattern="^[0-9\-\+\s\(\)]*$" required><br/>
+        <br/>
+
+        <label for="place">Wybór miasta:</label>
+        <br>
+
+        <select id="place">
+        <option value="krakow">Kraków</option>
+        <option value="warszawa">Warszawa</option>
+        <option value="gdansk">Gdańsk</option>
+        </select>
+        <br>
+
+        <br>
+
+        <p id="gender">Płeć</p>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="message">Wiadomość:</label><br/>
+        <textarea rows="4" cols="22" name="wiadomosc" id="message" placeholder="Proszę, wpisz tutaj swoją wiadomość"></textarea><br><br>
+
+        <input type="checkbox" name="zgoda" value="tak" required> Wyrażam zgodę na przetwarzanie swoich danych osobowych do celów marketingowych zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (Dz.U. nr 133, poz. 883)<br><br>
+
+        <input type="submit" value="send">
     </form>
+
 </body>
 
 </html>
