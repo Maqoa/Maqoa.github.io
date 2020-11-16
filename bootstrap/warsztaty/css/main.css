@@ -1,0 +1,29 @@
+body {
+    padding: 0px;
+    margin: 0;
+    
+}
+
+header {
+    height: 100vh;
+    background-image: url(../img/5QI+AstQ.html),
+    url(../img/header/pictures_on_the_wall.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#main-nav .navbar-brand{
+    color: #fff;
+    font-style: italic;
+}
+
+#main-nav .nav-link{
+    color: #fff;
+}
+
+#main-nav .nav-link:hover{
+    background-color:  #0ed8d6;
+}
+

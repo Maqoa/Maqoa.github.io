@@ -1,0 +1,40 @@
+body{
+    background-color: red;
+}
+
+.custom-fluid{
+    background-color: yellow;
+    height: 100px;
+}
+
+.custom-coinainer{
+    background-color: green;
+    height: 400px;
+}
+.custom-column{
+    height: 200px;
+}
+
+.custom-column:nth-of-type(even){
+    background-color: aqua;
+}
+
+
+.custom-column:nth-of-type(odd){
+    background-color: bisque;
+}
+
+
+.col-wewnatrz{
+    height: 100px;
+    
+}
+
+.col-wewnatrz:nth-last-of-type(even){
+    background-color: aquamarine;
+}
+
+
+.col-wewnatrz:nth-last-of-type(odd){
+    background-color: blue;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <form id="kalkulator">
+        <div class="row">
+            <label for="wplata">Włata PLN</label>
+            <input type="next" id="wplata" value="0" min="100">
+        </div>
+        <div class="row">
+            <label for="okres-kapitalizacji">Częstotliwość kapitalizacji</label>
+            <select id="okres-kapitalizacji">
+                     <option value="12">miesięcznie</option>
+                     <option value="4">kwartalnie</option>
+                     <option value="1">rocznie</option></select>
+        </div>
+        <div class="row">
+            <label for="ilosc-lat">Licba lat</label>
+            <input type="number" id="ilosc-lat" value="1" min="1">
+        </div>
+        <div class="row">
+            <label for="oprocentowanie">Stopa zwrotu %</label>
+            <input type="number" id="oprocentowanie" value="0">
+        </div>
+        <div class="row">
+            <label for="podatek">Uwzględnij podatek</label>
+            <input type="checkbox" id="podatek">
+
+
+        </div>
+
+        <div class="row">
+            <button id="oblicz">Oblicz</button>
+
+
+
+        </div>
+    </form>
+    <div id="wynik"></div>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

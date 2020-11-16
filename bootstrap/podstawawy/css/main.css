@@ -1,0 +1,24 @@
+/*
+div{
+    height: 100px;
+    background-color: bisque;
+}
+#d2{
+    background-color: brown;
+}*/
+
+
+.colors{
+    height: 150px;
+    background-color: aqua;
+}
+
+.colors:nth-last-of-type(2n){
+    background-color: rebeccapurple;
+}    
+
+.colors:nth-last-of-type(3n){
+    background-color: chartreuse;
+}
+
+

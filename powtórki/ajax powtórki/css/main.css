@@ -1,0 +1,30 @@
+.offer{
+    display: flex;
+    width: 85%;
+    margin: 30px auto;
+    padding: 35px;
+    border-bottom: 1px solid #ccc;
+    filter: blur(4px);
+    -webkit-flex: ;
+    -moz-flex: ;
+    -ms-flex: ;
+    -o-flex: ;
+    flex: ;
+}
+
+
+.offer__image{
+    flex: 1 1 25%;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.offer__description{
+    flex: 1 1 75%;
+    
+}
+
+.offer__image img{
+    max-width: 100%;
+    
+}
