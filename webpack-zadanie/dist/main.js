@@ -1,26 +1,23 @@
 'use strict';
 
-function biblioteka() {
-    var tytulKs = document.getElementById("tytul").value;
-    console.log("tytul: " + tytulKs);
+function biblioteka(autor, tytul, kategoria, priorytet){ {
+            this.autor = tytulKs;
+            this.tytul = autorKs;
+            this.kategoria = autorKs;
+            this.priorytet = priorytetKs;
+       this.opiszKsiazke = function() {             
+     return ("autor: " + this.autor + ",  " + "tytul: " + this.tytul, + "kategoria: " + this.kategoria, + ",  " + "priorytet: " + this.priorytet);
+        }
+    }
 
-    var autorKs = document.getElementById("autor").value;
-    console.log("autor: " + autorKs);
+   
 
-    var kategoriaKs = document.getElementById("kategoria").value;
-    console.log("kategoria: " + kategoriaKs);
-
-    var priorytetKs = document.getElementById("priorytet").value;
-    console.log("priorytet: " + priorytetKs);
-return biblioteka;
-var ksiazkiBiblioteki = [];
- ksiazkiBiblioteki.push('tytulKs') ;
-    console.log(ksiazkiBiblioteki.tytulKs);
-    ksiazkiBiblioteki.push('autorKs');
-   ksiazkiBiblioteki.push('kategoriaKs');
-    ksiazkiBiblioteki.push('priorytetKs');
-console.log(ksiazkiBiblioteki.join());
-    
 }
+var tytulKs = document.getElementById("tytul").value;
+    var autorKs = document.getElementById("autor").value;
+    var autorKs = document.getElementById("kategoria").value;
+    var priorytetKs = document.getElementById("priorytet").value;
+ 
 document.getElementById("send").onclick = biblioteka;
+
 
